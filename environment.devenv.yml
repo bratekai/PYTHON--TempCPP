@@ -1,0 +1,19 @@
+name: cpp-bindings
+channels:
+  - https://conda.anaconda.org/conda-forge/
+dependencies:
+  # All cpp stack dependencies
+  - gxx_linux-64  # [linux]
+  - cmake <3.18
+  - make
+
+  # For the bindings
+  - pybind11
+  
+  # Python requirements
+  - python >=3.6.7
+  - setuptools
+
+  # For python tests
+  - pytest
+  - pytest-runner
